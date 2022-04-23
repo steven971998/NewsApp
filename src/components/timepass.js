@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  
 } from "react-router-dom";
 
 import React, { Component } from 'react' 
@@ -39,3 +39,69 @@ export default class App extends Component{
     )
   }
 }
+
+
+////////////////////////////////// top scroll ///////////////
+// import React from 'react';
+
+// var btnScrollToTop=document.documentElement
+// // var rootElement = document.documentElement
+// //  btnScrollToTop.document.getElementById("btnScrollToTop")
+// const ScrollToTop = () => {
+    
+//     window.onload = () => {
+//         btnScrollToTop.style.visibility = "hidden";
+//         btnScrollToTop.style.opacity = 0;
+//        }
+//        // If the page is scrolled more than 200px,
+//        // display the scroll-to-top button
+//        // Otherwise keep the button hidden
+//        window.onscroll = () => {
+//         if (window.scrollY > 200) {
+//             btnScrollToTop.style.visibility = "visible";
+//             btnScrollToTop.style.opacity = 1;
+//         } else {
+//             btnScrollToTop.style.visibility = "hidden";
+//             btnScrollToTop.style.opacity = 0;
+//         }
+//        };
+       
+//     btnScrollToTop.scrollTo({
+//     top:0,
+//     behaviour:"smooth"
+// })
+
+// // const handleScroll = ()=>{
+// //     var scrollTotal=rootElement.scrollHeight - rootElement.clientHeight
+// //     if ((rootElement.scrollTop/scrollTotal)>0.80){
+// //         btnScrollToTop.classList.add("showBtn")
+// //     } else {
+// //         btnScrollToTop.classList.remove("showBtn")
+// //     }
+    
+
+    
+// return (
+//     <>
+//     <div className='btnScrollToTop' id='scrollTop'>
+//     <button onClick={ScrollToTop}  title="Go to top" id='btnScrollToTop'>
+//                 <i className='material-icons'>arrow_upward</i>
+//             </button>
+    
+//     </div>
+//     </>
+//   )
+// }
+// btnScrollToTop.addEventListener("click",ScrollToTop)
+// // document.addEventListener("scroll",handleScroll)
+
+
+// // const ScrollToTop = () => {
+// //     btnScrollToTop.scrollTo({
+// //     top:0,
+// //     behaviour:"smooth"
+// // })
+
+// export default ScrollToTop
+
+///////////
