@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import InfiniteScroll from "react-infinite-scroll-component";
 
 export class News extends Component {
+
     static defaultProps = {
         country: 'in',
         pageSize: 8,
@@ -27,7 +28,7 @@ export class News extends Component {
             page: 1,
             totalResults: 0
         }
-        document.title = `${this.capitalizeFirstLetter(this.props.category)} - NewsMonkey`;
+        document.title = `${this.capitalizeFirstLetter(this.props.category)} - NewsExpress`;
     }
 
     async updateNews() {
@@ -44,22 +45,18 @@ export class News extends Component {
             loading: false, 
         })
         this.props.setProgress(100);
-
     }
     async componentDidMount() {
         this.updateNews();
     }
-
     handlePrevClick = async () => {
         this.setState({ page: this.state.page - 1 });
         this.updateNews();
     }
-
     handleNextClick = async () => {
         this.setState({ page: this.state.page + 1 });
         this.updateNews()
     }
-
     fetchMoreData = async () => {  
         this.setState({page: this.state.page + 1})
         const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
@@ -70,11 +67,10 @@ export class News extends Component {
             totalResults: parsedData.totalResults
         })
       };
-
     render() {
         return (
             <>
-                <h1 className="text-center" style={{ margin: '35px 0px' }}>NewsMonkey - Top {this.capitalizeFirstLetter(this.props.category)} Headlines</h1>
+                <h1 className="text-center" style={{ paddingTop:'100px', paddingBottom:'4px' }}>NewsExpress - Top {this.capitalizeFirstLetter(this.props.category)} News</h1>
                 {this.state.loading && <Spinner />}
                 <InfiniteScroll
                     dataLength={this.state.articles.length}
@@ -83,7 +79,6 @@ export class News extends Component {
                     loader={<Spinner/>}
                 > 
                     <div className="container">
-                         
                     <div className="row">
                         {this.state.articles.map((element) => {
                             return <div className="col-md-4" key={element.url}>
@@ -92,11 +87,9 @@ export class News extends Component {
                         })}
                     </div>
                     </div> 
-                </InfiniteScroll>
-
+                </InfiniteScroll>       
             </>
         )
     }
 }
-
 export default News

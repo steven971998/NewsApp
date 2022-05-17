@@ -1,9 +1,10 @@
 import './App.css';
+import'./style.css';
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 import React, { Component } from 'react' 
@@ -11,12 +12,11 @@ import Navbar from './components/Navbar';
 import News from './components/News';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import LoadingBar from 'react-top-loading-bar'
-
+import ScrollToTop from './ScrollToTop';
 
 export default class App extends Component{
   pageSize = 15;
   apiKey=process.env.REACT_APP_NEWS_API
-
 
   state = {
     progress:0
@@ -46,6 +46,8 @@ export default class App extends Component{
           <Route path="/business"   element={<News  setProgress={this.setProgress} apiKey={this.apiKey} key="business" pageSize={this.pageSize} country="in" category="business"/>}></Route>
         </Routes>
         </Router>
+      
+      <ScrollToTop/>
       </div>
     )
   }
