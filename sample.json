@@ -1,0 +1,58 @@
+{
+    "status": "ok",
+    "totalResults": 4,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-sport",
+                "name": "BBC Sport"
+            },
+            "author": "BBC News",
+            "title": "Michael Slater: Ex-cricketer arrested for second time in Sydney",
+            "description": "He breached a protective order after an alleged domestic violence incident in Sydney, a court hears.",
+            "url": "http://www.bbc.co.uk/news/world-australia-59662522",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/16B7C/production/_122225039_gettyimages-1152267512.jpg",
+            "publishedAt": "2021-12-15T08:07:24.0387797Z",
+            "content": "Image source, Getty Images\r\nImage caption, Michael Slater - a cricketer turned commentator - was arrested on Wednesday\r\nFormer Australian cricketer Michael Slater has been charged with breaching a pr… [+1189 chars]"
+        },
+        {
+            "source": {
+                "id": "news24",
+                "name": "News24"
+            },
+            "author": "AFP",
+            "title": "Australian ex-cricketer Michael Slater arrested again, charged with restraining order breach",
+            "description": "Former Australia Test cricketer Michael Slater has been charged with breaching a restraining order, two months after his arrest over allegations of domestic violence.",
+            "url": "https://www.news24.com/sport/Cricket/australian-ex-cricketer-michael-slater-arrested-again-charged-with-restraining-order-breach-20211215",
+            "urlToImage": "https://cdn.24.co.za/files/Cms/General/d/9949/042f648e31a8483dbcb3aa75246d2f0e.jpg",
+            "publishedAt": "2021-12-15T07:37:18+00:00",
+            "content": "Former Australia Test cricketer Michael Slater was on Wednesday charged with breaching a restraining order, two months after his \r\narrest over allegations of domestic violence.\r\nNew South Wales \r\nsta… [+1121 chars]"
+        },
+        {
+            "source": {
+                "id": "espn-cric-info",
+                "name": "ESPN Cric Info"
+            },
+            "author": null,
+            "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+            "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+            "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+            "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+            "publishedAt": "2020-04-27T11:41:47Z",
+            "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
+        },
+        {
+            "source": {
+                "id": "espn-cric-info",
+                "name": "ESPN Cric Info"
+            },
+            "author": null,
+            "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+            "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+            "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+            "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+            "publishedAt": "2020-03-30T15:26:05Z",
+            "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
+        }
+    ]
+}
