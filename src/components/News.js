@@ -3,11 +3,12 @@ import NewsItem from './NewsItem'
 import Spinner from './Spinner';
 import PropTypes from 'prop-types'
 import InfiniteScroll from "react-infinite-scroll-component";
+import configJson from '../config/config.json'
 
 export class News extends Component {
 
     static defaultProps = {
-        country: 'in',
+        country: configJson.COUNTRY_CODE,
         pageSize: 8,
         category: 'general',
     }
